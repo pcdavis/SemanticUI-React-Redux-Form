@@ -1,26 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import FieldArraysForm from "./FieldArraysForm";
+import GoalsArray from "./GoalsArray";
+import ConnectedGoalsArray from "./ConnectedGoalsArray";
+import RSRF_Login from "./RSRF_Login";
+import RSRF_FieldArray from "./RSRF_FieldArray";
+import "./App.css";
+import { Container, Segment } from "semantic-ui-react";
+import MediumTut from "./mediumTut_react_wizard/MediumTut"; //React and Semantic but not Redux or Redux Form
+import SemanticReduxForm from "./SemanticUI_ReduxForm/SemanticReduxForm";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container>
+        <SemanticReduxForm />
+      </Container>
     );
   }
 }
