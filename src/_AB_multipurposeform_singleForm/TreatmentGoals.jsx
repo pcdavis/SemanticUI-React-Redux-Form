@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Field, FieldArray, reduxForm } from 'redux-form'
 import validate from './validate'
-import { Form, Button, Container, Header, Icon, Segment, Label, Grid } from "semantic-ui-react";
+import { Form, Button, Container, Header, Icon, Segment, Label, Divider } from "semantic-ui-react";
 import { Select, TextArea } from '../myFormInputs/myFormInputs'
 
 
@@ -97,13 +97,10 @@ const TreatmentGoals = props => {
           <FieldArray name="goals" component={renderGoals} />
 
 
-          <Form.Group inline>
-        <Form.Button basic onClick={previousPage} content='Previous' icon='left arrow' labelPosition='left'  />
-          <Form.Button primary content='Next' icon='right arrow' labelPosition='right'  />
-        </Form.Group>
 
 
     </Form>
+    <Divider hidden />
     </Container>
   )
 }

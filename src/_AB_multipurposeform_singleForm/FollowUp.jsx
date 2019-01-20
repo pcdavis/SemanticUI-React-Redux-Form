@@ -1,7 +1,7 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import validate from './validate'
-import { Form, Button, Container, Header, Icon } from "semantic-ui-react";
+import { Form, Divider, Container, Header, Icon } from "semantic-ui-react";
 import { Select, TextArea } from '../myFormInputs/myFormInputs'
 
 
@@ -85,11 +85,9 @@ const FollowUp = props => {
         />
           </Form.Group>
 
-        <Form.Group inline>
-        <Form.Button basic onClick={previousPage} content='Previous' icon='left arrow' labelPosition='left'  />
-          <Form.Button primary content='Next' icon='right arrow' labelPosition='right'  />
-        </Form.Group>
+
     </Form>
+    <Divider hidden />
     </Container>
   )
 }

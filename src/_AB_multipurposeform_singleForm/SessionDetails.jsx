@@ -1,6 +1,6 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import { Form, Container, Header, Icon } from "semantic-ui-react";
+import { Form, Container, Header, Icon, Divider } from "semantic-ui-react";
 import validate from './validate'
 import { Select } from '../myFormInputs/myFormInputs'
 /*---See ExampleUsage.jsx for details on using react-semantic-ui with redux-form -------*/
@@ -95,10 +95,9 @@ const SessionDetails = props => {
           />
         </Form.Group>
 
-        <Form.Group inline>
-          <Form.Button content='Next' icon='right arrow' labelPosition='right' primary />
-        </Form.Group>
+
     </Form>
+    <Divider hidden />
     </Container>
   )
 }

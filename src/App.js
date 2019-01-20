@@ -8,7 +8,7 @@ import "./App.css";
 import { Container, Segment } from "semantic-ui-react";
 import MediumTut from "./mediumTut_react_wizard/MediumTut"; //React and Semantic but not Redux or Redux Form
 import SemanticReduxForm from "./SemanticUI_ReduxForm/SemanticReduxForm";
-import MultipurposeForm from "./_AB_multipurposeform/MultipurposeForm";
+import MultipurposeForm from "./_AB_multipurposeform_singleForm/MultipurposeForm";
 
 
 class App extends Component {

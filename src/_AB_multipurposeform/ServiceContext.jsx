@@ -7,7 +7,7 @@ import { Checkbox, Radio, Select, TextArea } from '../myFormInputs/myFormInputs'
 const renderError = ({ meta: { touched, error } }) =>
   touched && error ? <span>{error}</span> : false
 
-const ServiceDetails = props => {
+const ServiceContext = props => {
   const { handleSubmit, previousPage } = props
   return (
     <Container>
@@ -17,6 +17,7 @@ const ServiceDetails = props => {
       Service Context
       <Header.Subheader>Context in which services were provided</Header.Subheader>
     </Header.Content>
+    <hr/>
   </Header>
 
 
@@ -105,4 +106,4 @@ export default reduxForm({
   destroyOnUnmount: false,
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate
-})(ServiceDetails)
+})(ServiceContext)
